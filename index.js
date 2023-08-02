@@ -1,8 +1,10 @@
-import {renderTableRows} from "./nutrition.js";
+import {renderTableRow} from "./nutrition.js";
 
-const data = [["Carbs", "17g"], ["Protein", "19g"], ["Fat", "5g"]];
-
-const html = renderTableRows(data);
+let htmlForCarbs = renderTableRow("Carbs", "17g");
+let htmlForProtein = renderTableRow("Protein", "19g");
+let htmlForFat = renderTableRow("Fat", "5g");
 
 const tbody = document.querySelector("#nutrition-table tbody");
-tbody.insertAdjacentHTML("beforeend", html);
+tbody.insertAdjacentHTML("beforeend", htmlForCarbs);
+tbody.insertAdjacentHTML("beforeend", htmlForProtein);
+tbody.insertAdjacentHTML("beforeend", htmlForFat);
