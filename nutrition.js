@@ -1,16 +1,10 @@
 /**
- * @param {array[][]} rows
+ * @param {string} label
+ * @param {string} value
  */
-export function renderTableRows(rows) {
-    console.log(rows);
-    let tableRows = ``;
-
-    rows.forEach(function(row){
-        tableRows += `<tr>
-        <td>${row[0]}</td>
-        <td>${row[1]}</td>
-        </tr>`;
-    })
-
-    return tableRows;
+export function renderTableRows(label, value) {
+    return `<tr>
+    <td>${label}</td>
+    <td>${value}</td>
+    </tr>`;
 }
