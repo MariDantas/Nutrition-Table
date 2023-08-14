@@ -22,6 +22,10 @@ Visual Studio Code's "Live Server" feature acts as a local server, providing an 
 
 ## Update History
 
+### Part III
+* The function now receives an object as a parameter, each containing the data of one row.
+* The function now has to be called three times for each row.
+
 ### Part II
 * The function ```renderTableRows()``` now receives a nested array as a parameter.
 * The function ```renderTableRows()``` is capable of rendering multiple rows.
