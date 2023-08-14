@@ -1,15 +1,11 @@
 /**
- * @param {array[][]} rows
+ * @param {Object} details
+ * @param {string} details.title
+ * @param {number} details.value
  */
-export function renderTableRows(rows) {
-    let tableRows = ``;
-
-    rows.forEach(function(row){
-        tableRows += `<tr>
-        <td>${row[0]}</td>
-        <td>${row[1]}</td>
-        </tr>`;
-    })
-
-    return tableRows;
+export function renderTableRow(details) {
+    return `<tr>
+    <td>${details.title}</td>
+    <td>${details.value}g</td>
+    </tr>`
 }
